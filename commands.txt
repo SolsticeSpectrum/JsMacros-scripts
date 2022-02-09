@@ -23,10 +23,10 @@
 !goto <x> <y> <z> | <název_bloku> - půjde k daným souřadnicím nebo bloku
 !farm - spustí farmaření
 !mine <název_bloku> - začne těžit daný blok (xray je vypnutý)
-!get <název_itemu> - pokusí se získat suroviny a vycraftit/vypéct určený item)
+!get <název_itemu> - pokusí se získat suroviny a vycraftit/vypéct určený item
 !beatgame - pokusí se zabít draka
 !inventory - vypíše obsah inventáře
-!drop <název_itemu> | all - vyhodí určený nebo všechny itemy z inventáře)
+!drop <název_itemu> | all - vyhodí určený nebo všechny itemy z inventáře
 !surface - vykope se z podzemí na povrch
 !build <schéma> - začne stavět libovolný .schematic soubor
 !follow player <jméno> | entity <jméno_entity> - začné následovat hráče nebo entitu
