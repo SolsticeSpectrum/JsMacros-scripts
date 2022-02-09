@@ -1,0 +1,1 @@
+Chat.say("Zdravím, jmenuji se Bob. Jsem váš chytrý společník. Pro zobrazení všech mých dovedností napište !help");

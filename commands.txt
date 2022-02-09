@@ -1,0 +1,54 @@
+!time - napíše aktuální čas
+!days - napíše počet dnů v Minecraft světe
+!dayornight - napíše jestli je den nebo noc
+!tps - napíše současné tps serveru
+!radius - napíše do chatu jména všech hráčů v okolí bota
+!randomfact - napíše náhodný fakt
+!q <otázka> - odpoví na otázku ano nebo ne
+!bible - zapne nebo vypne výpis bible
+!coords - zobrazí aktuální souřadnice bota
+!playercoords <jméno_hráče> - zobrazí aktuální souřadnice daného hráče
+!uuid <jméno_hráče> - zobrazí UUID hráče
+!health - zobrazí počet srdíček
+!hunger - zobrazí stav hunger baru
+!cooltext <zpráva> - napíše zprávu jiným fontem
+!dice - hodí kostkou
+!stop - zastaví aktuální proces
+!funhelp - vypíše zábavné příkazy
+!pause - pozastaví proces
+!resume - obnoví pozastavený proces
+!sethome <název> - nastaví domov pod určeným názvem
+!home <název> - půjde k nastavenému domovu
+!goal <x> <y> <z> - nastaví cílové souřadnice
+!path - půjde k nastaveným cílovým souřadnicím
+!goto <x> <y> <z> | <název_bloku> - půjde k daným souřadnicím nebo bloku
+!farm - spustí farmaření
+!mine <název_bloku> - začne těžit daný blok (xray je vypnutý)
+!get <název_itemu> - pokusí se získat suroviny a vycraftit/vypéct určený item)
+!beatgame - pokusí se zabít draka
+!inventory - vypíše obsah inventáře
+!drop <název_itemu> | all - vyhodí určený nebo všechny itemy z inventáře)
+!surface - vykope se z podzemí na povrch
+!build <schéma> - začne stavět libovolný .schematic soubor
+!follow player <jméno> | entity <jméno_entity> - začné následovat hráče nebo entitu
+!say <zpráva> - zopakuje zprávu
+!pvp - zapne pvp
+!disablepvp - vypne pvp
+!pve <název_entity> - zapne pve proti entitě
+!disablepve - vypne pve
+!friend <jméno> - bude ignorovat hráče v režimu pvp
+!tpa <jméno> - pošle žádost o teleport
+!tpaccept - potvrdí žádost o teleport
+!restp <jméno_residence> - teleportuje se na residenci
+!back - použije /back pokud je k dispozici
+!serversethome <název> - nastaví sethome pomocí server příkazu
+!serverhome <název> - teleportuje se na home pomocí server příkazu
+!sel - worldedit, pro !sel příkazy napište !selhelp!sel pos1 <x> <y> <z> - nastaví souřadnice bodu 1 výberu
+!sel pos2 <x> <y> <z> - nastaví souřadnice bodu 2 výberu
+Je možné nastavit více výberů
+!sel clear - odstraní všechny výběry
+!sel cleararea - vykope všechny bloky ve výberu
+!sel fill <název_bloku> - vyplní výber určeným blokem
+!sel walls <název_bloku> - postaví stěny na okrajích výberu
+!sel shell <název_bloku> - stejné jako walls ale postaví i střechu a podlahu
+!sel replace <název_bloku1> <název_bloku2> - nahradí bloky jinými bloky
