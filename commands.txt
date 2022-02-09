@@ -14,7 +14,6 @@
 !cooltext <zpráva> - napíše zprávu jiným fontem
 !dice - hodí kostkou
 !stop - zastaví aktuální proces
-!funhelp - vypíše zábavné příkazy
 !pause - pozastaví proces
 !resume - obnoví pozastavený proces
 !sethome <název> - nastaví domov pod určeným názvem
@@ -43,7 +42,8 @@
 !back - použije /back pokud je k dispozici
 !serversethome <název> - nastaví sethome pomocí server příkazu
 !serverhome <název> - teleportuje se na home pomocí server příkazu
-!sel - worldedit, pro !sel příkazy napište !selhelp!sel pos1 <x> <y> <z> - nastaví souřadnice bodu 1 výberu
+!sel - worldedit
+!sel pos1 <x> <y> <z> - nastaví souřadnice bodu 1 výberu
 !sel pos2 <x> <y> <z> - nastaví souřadnice bodu 2 výberu
 Je možné nastavit více výberů
 !sel clear - odstraní všechny výběry
