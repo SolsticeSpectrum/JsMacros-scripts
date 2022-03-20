@@ -33,7 +33,7 @@ switch (outputhelp) {
             Time.sleep(3000);
             Chat.say("->!mine <název_bloku> - začne těžit daný blok (xray je vypnutý)");
             Time.sleep(3000);
-            Chat.say("->!get <název_itemu> - pokusí se získat suroviny a vycraftit/vypéct určený item");
+            Chat.say("->!get <název_itemu> <počet> - pokusí se získat suroviny a vycraftit/vypéct určený item");
             Time.sleep(3000);
             Chat.say("->!beatgame - pokusí se zabít draka");
             Time.sleep(3000);

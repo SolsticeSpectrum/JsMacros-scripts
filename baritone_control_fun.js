@@ -97,7 +97,7 @@ switch (outputfun) {
                 Chat.say("Ne")
             }
         }
-        break
+        break;
 
     // randomfact
     case "!randomfact":
