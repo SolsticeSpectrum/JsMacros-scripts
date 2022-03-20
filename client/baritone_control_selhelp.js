@@ -1,4 +1,4 @@
-const regex = /^(?:.*)> (![\S]*)/;
+const regex = /^(?:.*)➲ (![\S]*)/;
 const regexCommand = `$1`;
 let text = event.text.getString();
 let outputselhelp = text.replace(regex, regexCommand);

@@ -1,5 +1,5 @@
-const regex = /^(?:.*)> (![\S]*)(.*)/;
-const noSpace_regex = /^(?:.*)> (![\S]*)(?:\s)(.*)/;
+const regex = /^(?:.*)➲ (![\S]*)(.*)/;
+const noSpace_regex = /^(?:.*)➲ (![\S]*)(?:\s)(.*)/;
 const regexCommand = `$1`;
 const regexArgs = `$2`;
 const noSpace_regexArgs = `$2`;
@@ -111,7 +111,12 @@ Client.runOnMainThread(JavaWrapper.methodToJava(() => {
 
         // restp
         case "!restp":
-            Chat.say("+res tp" + args);
+            Chat.say("/res tp" + args);
+            break;
+
+        // rtp
+        case "!rtp":
+            Chat.say("/rtp");
             break;
 
         // say

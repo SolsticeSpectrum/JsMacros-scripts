@@ -1,4 +1,4 @@
-const regex = /^(?:.*)> (![\S]*)/;
+const regex = /^(?:.*)➲ (![\S]*)/;
 const regexCommand = `$1`;
 let text = event.text.getString();
 let outputhelp = text.replace(regex, regexCommand);
@@ -64,6 +64,8 @@ switch (outputhelp) {
             Chat.say("->!tpaccept - potvrdí žádost o teleport");
             Time.sleep(3000);
             Chat.say("->!restp <jméno_residence> - teleportuje se na residenci");
+            Time.sleep(3000);
+            Chat.say("->!rtp - použije příkaz /rtp");
             Time.sleep(3000);
             Chat.say("->!back - použije /back pokud je k dispozici");
             Time.sleep(3000);

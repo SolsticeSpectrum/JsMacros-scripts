@@ -39,6 +39,7 @@
 !tpa <jméno> - pošle žádost o teleport
 !tpaccept - potvrdí žádost o teleport
 !restp <jméno_residence> - teleportuje se na residenci
+!rtp - použije příkaz /rtp
 !back - použije /back pokud je k dispozici
 !serversethome <název> - nastaví sethome pomocí server příkazu
 !serverhome <název> - teleportuje se na home pomocí server příkazu

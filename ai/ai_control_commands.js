@@ -1,5 +1,5 @@
-const regex = /^(?:.*)› (![\S]*)(.*)/;
-const noSpace_regex = /^(?:.*)› (![\S]*)(?:\s)(.*)/;
+const regex = /^(?:.*)➲ (![\S]*)(.*)/;
+const noSpace_regex = /^(?:.*)➲ (![\S]*)(?:\s)(.*)/;
 const regexCommand = `$1`;
 const regexArgs = `$2`;
 const noSpace_regexArgs = `$2`;

@@ -1,4 +1,4 @@
-const regex = /^(?:.*)> (![\S]*)(.*)/;
+const regex = /^(?:.*)➲ (![\S]*)(.*)/;
 const regexCommand = `$1`;
 const regexArgs = `$2`;
 const Obj2IntMap = Java.type("it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap");

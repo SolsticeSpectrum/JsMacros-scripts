@@ -1,1 +1,1 @@
-sed -i 's/*)»/*)>/g' /home/ruda0/.minecraft/modded/Fabric-1.18.1/config/jsMacros/Macros/*.js
+sed -i 's/*)>/*)➲/g' *.js
