@@ -1,1 +1,1 @@
-BobBot-JsMacros
+JsMacros-scripts
