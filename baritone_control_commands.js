@@ -7,86 +7,86 @@ let text = event.text.getString();
 let outputcommands = text.replace(regex, regexCommand);
 let args = text.replace(regex, regexArgs);
 let noSpace_args = text.replace(noSpace_regex, noSpace_regexArgs);
-let inv = Player.openInventory()
+let inv = Player.openInventory();
 let map = inv.getMap();
 
 Client.runOnMainThread(JavaWrapper.methodToJava(() => {
     switch (outputcommands) {
         // stop
         case "!stop":
-            Chat.say("@stop")
-            Chat.say("#stop")
+            Chat.say("@stop");
+            Chat.say("#stop");
             break;
 
         // stop
         case "!pause":
-            Chat.say("#pause")
+            Chat.say("#pause");
             break;
 
         // resume
         case "!resume":
-            Chat.say("#resume")
+            Chat.say("#resume");
             break;
 
         // path
         case "!path":
-            Chat.say("#path")
+            Chat.say("#path");
             break;
 
         // farm
         case "!farm":
-            Chat.say("#farm")
+            Chat.say("#farm");
             break;
 
         // surface
         case "!surface":
-            Chat.say("#surface")
+            Chat.say("#surface");
             break;
 
         // tpaccept
         case "!tpaccept":
-            Chat.say("/tpaccept")
+            Chat.say("/tpaccept");
             break;
 
         // serversethome
         case "!serversethome":
-            Chat.say("/sethome" + args)
+            Chat.say("/sethome" + args);
             break;
 
         // serverhome
         case "!serverhome":
-            Chat.say("/home" + args)
+            Chat.say("/home" + args);
             break;
 
         // pvp on
         case "!pvp":
-            Chat.say(".toggle kill-aura on")
-            Chat.say(".toggle aim-assist on")
-            Chat.say("#follow players")
+            Chat.say(".toggle kill-aura on");
+            Chat.say(".toggle aim-assist on");
+            Chat.say("#follow players");
             break;
 
         // pvp off
         case "!disablepvp":
-            Chat.say(".toggle kill-aura off")
-            Chat.say(".toggle aim-assist off")
-            Chat.say("#stop")
+            Chat.say(".toggle kill-aura off");
+            Chat.say(".toggle aim-assist off");
+            Chat.say("#stop");
             break;
 
         // pve on
         case "!pve":
-            Chat.say("+toggle KillAura")
-            Chat.say("#follow entity" + args)
+            Chat.say("+toggle KillAura");
+            Chat.say("#follow entity" + args);
             break;
 
         // pve off
         case "!disablepve":
-            Chat.say("+toggle KillAura")
-            Chat.say("#stop")
+            Chat.say("+toggle KillAura");
+            Chat.say("#stop");
             break;
 
         // friend
         case "!friend":
-            Chat.say(".friends add" + args)
+            Chat.say(".friends add" + args);
             break;
 
         // drop
@@ -106,62 +106,62 @@ Client.runOnMainThread(JavaWrapper.methodToJava(() => {
 
         // tpa
         case "!tpa":
-            Chat.say("/tpa" + args)
+            Chat.say("/tpa" + args);
             break;
 
         // restp
         case "!restp":
-            Chat.say("+res tp" + args)
+            Chat.say("+res tp" + args);
             break;
 
         // say
         case "!say":
-            Chat.say("+say" + args)
+            Chat.say("+say" + args);
             break;
 
         // sel
         case "!sel":
-            Chat.say("#sel" + args)
+            Chat.say("#sel" + args);
             break;
 
         // back
         case "!back":
-            Chat.say("/back")
+            Chat.say("/back");
             break;
 
         // goal
         case "!goal":
-            Chat.say("#goal" + args)
+            Chat.say("#goal" + args);
             break;
 
         // sethome
         case "!sethome":
-            Chat.say("#sethome" + args)
+            Chat.say("#sethome" + args);
             break;
 
         // home
         case "!home":
-            Chat.say("#wp goto" + args)
+            Chat.say("#wp goto" + args);
             break;
 
         // follow
         case "!follow":
-            Chat.say("#follow" + args)
+            Chat.say("#follow" + args);
             break;
 
         // mine
         case "!mine":
-            Chat.say("#mine" + args)
+            Chat.say("#mine" + args);
             break;
 
         // goto
         case "!goto":
-            Chat.say("#goto" + args)
+            Chat.say("#goto" + args);
             break;
 
         // build
         case "!build":
-            Chat.say("#build" + args)
+            Chat.say("#build" + args);
             break;
     }
 }))

@@ -1,1 +1,1 @@
-Java.type("xyz.wagyourtail.jsmacros.core.library.impl.FGlobalVars").globalRaw.clear()
+Java.type("xyz.wagyourtail.jsmacros.core.library.impl.FGlobalVars").globalRaw.clear();

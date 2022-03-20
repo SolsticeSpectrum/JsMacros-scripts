@@ -33,7 +33,7 @@ switch (outputselhelp) {
         break;
 
     case "!stop":
-        GlobalVars.getObject("LockSelHelp")?.getCtx().closeContext()
-        GlobalVars.remove("LockSelHelp")
+        GlobalVars.getObject("LockSelHelp")?.getCtx().closeContext();
+        GlobalVars.remove("LockSelHelp");
         break;
 }

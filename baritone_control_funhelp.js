@@ -45,7 +45,7 @@ switch (outputfunhelp) {
         break;
 
     case "!stop":
-        GlobalVars.getObject("LockFunHelp")?.getCtx().closeContext()
-        GlobalVars.remove("LockFunHelp")
+        GlobalVars.getObject("LockFunHelp")?.getCtx().closeContext();
+        GlobalVars.remove("LockFunHelp");
         break;
 }

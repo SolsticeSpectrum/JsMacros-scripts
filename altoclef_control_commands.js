@@ -7,19 +7,19 @@ let outputaltoclef = text.replace(regex, regexCommand);
 let args = text.replace(regex, regexArgs);
 let itemMap = new Obj2IntMap();
 
-context.releaseLock()
+context.releaseLock();
 handleMessage(outputaltoclef);
 
 function handleMessage(message) {
     switch (outputaltoclef) {
         // beatgame
         case "!beatgame":
-            Chat.say("@gamer")
+            Chat.say("@gamer");
             break;
 
         // get
         case "!get":
-            Chat.say("@get" + args)
+            Chat.say("@get" + args);
             break;
 
         // inventory
@@ -33,7 +33,7 @@ function handleMessage(message) {
             var inv = Player.openInventory();
             for (let idx = 0; idx < inv.getTotalSlots(); idx++) {
                 let item = inv.getSlot(idx);
-                itemMap.addTo(item.getItemId().substring(10), item.getCount());
+                itemMap.addTo(item.getItemId().substring(10), item.getCount())
             }
 
             itemMap.remove("air");
@@ -41,7 +41,7 @@ function handleMessage(message) {
             itemMap.forEach((item, count) => {
                 if (GlobalVars.getBoolean("LockInventory")) {
                     Chat.say(item + " " + count + "x");
-                    Time.sleep(3000);
+                    Time.sleep(3000)
                 }
             });
 

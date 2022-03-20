@@ -77,7 +77,7 @@ switch (outputhelp) {
         break;
 
     case "!stop":
-        GlobalVars.getObject("LockHelp")?.getCtx().closeContext()
-        GlobalVars.remove("LockHelp")
+        GlobalVars.getObject("LockHelp")?.getCtx().closeContext();
+        GlobalVars.remove("LockHelp");
         break;
 }
