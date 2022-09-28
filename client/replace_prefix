@@ -1,0 +1,3 @@
+sed -i 's/case "-/case ":/g' *.js
+sed -i 's/*)> (-/*)> (:/g' *.js
+sed -i 's/Chat.say("->!/Chat.say("->:/g' *.js

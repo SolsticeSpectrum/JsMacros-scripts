@@ -1,5 +1,5 @@
-const regex = /^(?:.*)➲ (![\S]*)(.*)/;
-const noSpace_regex = /^(?:.*)➲ (![\S]*)(?:\s)(.*)/;
+const regex = /^(?:.*)> (:[\S]*)(.*)/;
+const noSpace_regex = /^(?:.*)> (:[\S]*)(?:\s)(.*)/;
 const regexCommand = `$1`;
 const regexArgs = `$2`;
 const noSpace_regexArgs = `$2`;
@@ -13,84 +13,89 @@ let map = inv.getMap();
 Client.runOnMainThread(JavaWrapper.methodToJava(() => {
     switch (outputcommands) {
         // stop
-        case "!stop":
-            Chat.say("@stop");
+        case ":stop":
+            //Chat.say("@stop");
             Chat.say("#stop");
             break;
 
         // stop
-        case "!pause":
+        case ":pause":
             Chat.say("#pause");
             break;
 
         // resume
-        case "!resume":
+        case ":resume":
             Chat.say("#resume");
             break;
 
         // path
-        case "!path":
+        case ":path":
             Chat.say("#path");
             break;
 
         // farm
-        case "!farm":
+        case ":farm":
             Chat.say("#farm");
             break;
 
         // surface
-        case "!surface":
+        case ":surface":
             Chat.say("#surface");
             break;
 
         // tpaccept
-        case "!tpaccept":
+        case ":tpaccept":
             Chat.say("/tpaccept");
             break;
 
         // serversethome
-        case "!serversethome":
+        case ":serversethome":
             Chat.say("/sethome" + args);
             break;
 
         // serverhome
-        case "!serverhome":
+        case ":serverhome":
             Chat.say("/home" + args);
             break;
 
         // pvp on
-        case "!pvp":
-            Chat.say(".toggle kill-aura on");
-            Chat.say(".toggle aim-assist on");
+        case ":pvp":
+            Player.getPlayer().getRaw().method_44096(".toggle kill-aura on", null)
+            //Chat.say(".toggle kill-aura on");
+            Player.getPlayer().getRaw().method_44096(".toggle aim-assist on", null)
+            //Chat.say(".toggle aim-assist on");
             Chat.say("#follow players");
             break;
 
         // pvp off
-        case "!disablepvp":
-            Chat.say(".toggle kill-aura off");
-            Chat.say(".toggle aim-assist off");
+        case ":disablepvp":
+            Player.getPlayer().getRaw().method_44096(".toggle kill-aura off", null)
+            //Chat.say(".toggle kill-aura off");
+            Player.getPlayer().getRaw().method_44096(".toggle aim-assist off", null)
+            //Chat.say(".toggle aim-assist off");
             Chat.say("#stop");
             break;
 
         // pve on
-        case "!pve":
+        case ":pve":
             Chat.say("+toggle KillAura");
             Chat.say("#follow entity" + args);
             break;
 
         // pve off
-        case "!disablepve":
+        case ":disablepve":
             Chat.say("+toggle KillAura");
             Chat.say("#stop");
             break;
 
         // friend
-        case "!friend":
-            Chat.say(".friends add" + args);
+        case ":friend":
+            Player.getPlayer().getRaw().method_44096(".friends add" + args, null)
+            //Chat.say(".friends add" + args);
             break;
 
         // drop
-        case "!drop":
+        case ":drop":
             let slots = Array.from(map.get("main")).concat(Array.from(map.get("hotbar")), (map.get("offhand")), (map.get("helmet")), (map.get("chestplate")), (map.get("leggings")), (map.get("boots")));
             for (let slot of slots) {
                 if (inv.getSlot(slot).getItemId() == "minecraft:" + noSpace_args) {
@@ -105,67 +110,67 @@ Client.runOnMainThread(JavaWrapper.methodToJava(() => {
             break;
 
         // tpa
-        case "!tpa":
+        case ":tpa":
             Chat.say("/tpa" + args);
             break;
 
         // restp
-        case "!restp":
+        case ":restp":
             Chat.say("/res tp" + args);
             break;
 
         // rtp
-        case "!rtp":
+        case ":rtp":
             Chat.say("/rtp");
             break;
 
         // say
-        case "!say":
+        case ":say":
             Chat.say("+say" + args);
             break;
 
         // sel
-        case "!sel":
+        case ":sel":
             Chat.say("#sel" + args);
             break;
 
         // back
-        case "!back":
+        case ":back":
             Chat.say("/back");
             break;
 
         // goal
-        case "!goal":
+        case ":goal":
             Chat.say("#goal" + args);
             break;
 
         // sethome
-        case "!sethome":
+        case ":sethome":
             Chat.say("#sethome" + args);
             break;
 
         // home
-        case "!home":
+        case ":home":
             Chat.say("#wp goto" + args);
             break;
 
         // follow
-        case "!follow":
+        case ":follow":
             Chat.say("#follow" + args);
             break;
 
         // mine
-        case "!mine":
+        case ":mine":
             Chat.say("#mine" + args);
             break;
 
         // goto
-        case "!goto":
+        case ":goto":
             Chat.say("#goto" + args);
             break;
 
         // build
-        case "!build":
+        case ":build":
             Chat.say("#build" + args);
             break;
     }

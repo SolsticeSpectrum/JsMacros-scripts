@@ -1,4 +1,4 @@
-const regex = /^(?:.*)➲ (![\S]*)(.*)/;
+const regex = /^(?:.*)> (:[\S]*)(.*)/;
 const regexCommand = `$1`;
 const regexArgs = `$2`;
 const Obj2IntMap = Java.type("it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap");
@@ -12,18 +12,25 @@ handleMessage(outputaltoclef);
 
 function handleMessage(message) {
     switch (outputaltoclef) {
+/*
         // beatgame
-        case "!beatgame":
+        case ":beatgame":
             Chat.say("@gamer");
             break;
 
         // get
-        case "!get":
+        case ":get":
             Chat.say("@get" + args);
             break;
 
+        // locate
+        case ":locate":
+            Chat.say("@locate_structure" + args);
+            break;
+*/
+
         // inventory
-        case "!inventory":
+        case ":inventory":
             if (GlobalVars.getBoolean("LockInventory")) {
                 return;
             }
@@ -45,7 +52,7 @@ function handleMessage(message) {
                 }
             });
 
-        case "!stop":
+        case ":stop":
             GlobalVars.putBoolean("LockInventory", false);
             break;
     }
